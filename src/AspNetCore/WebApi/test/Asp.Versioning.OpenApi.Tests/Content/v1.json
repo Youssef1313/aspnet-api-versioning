@@ -1,13 +1,13 @@
 {
-  "openapi": "3.1.1",
+  "openapi": "3.2.0",
   "info": {
     "title": "Test API | v1",
-    "description": "The API was deprecated on 1/1/2026. The API was sunset on 2/10/2026.\r\n\r\n### Links\r\n\r\n- [Version Deprecation Policy](http://my.api.com/policies/versions/deprecated.html)\r\n- [Version Sunset Policy](http://my.api.com/policies/versions/sunset.html)",
+    "description": "The API was deprecated on 01/01/2026. The API was sunset on 02/10/2026.\n\n### Links\n\n- [Version Deprecation Policy](http://my.api.com/policies/versions/deprecated.html)\n- [Version Sunset Policy](http://my.api.com/policies/versions/sunset.html)",
     "version": "1.0"
   },
   "servers": [
     {
-      "url": "http://localhost/"
+      "url": "http://localhost"
     }
   ],
   "paths": {
@@ -39,8 +39,10 @@
             "description": "The requested API version",
             "required": true,
             "schema": {
-              "type": "string",
-              "enum": ["1.0"]
+              "enum": [
+                "1.0"
+              ],
+              "type": "string"
             }
           }
         ],
